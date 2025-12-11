@@ -17,3 +17,5 @@ def get_items():
 def get_logs():
     logs = LogEntry.query.all()
     return jsonify([{"id": l.id, "user_id": l.user_id, "action": l.action} for l in logs])
+
+

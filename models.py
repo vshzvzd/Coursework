@@ -48,3 +48,5 @@ class LogEntry(db.Model):
     user_id = db.Column(db.Integer, db.ForeignKey('users.id'))
     action = db.Column(db.String(200))
     created_at = db.Column(db.DateTime, default=datetime.utcnow)
+
+
